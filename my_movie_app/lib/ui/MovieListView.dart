@@ -23,9 +23,22 @@ class MovieListView extends StatelessWidget {
            itemCount: Movies.length,
           itemBuilder: (BuildContext context,int index){
           return Card(
+            elevation: 4.5,
             color: Colors.white,
             child: ListTile(
+              leading: CircleAvatar(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.circular(13.9)
+                  ),
+                  child: Text(Movies[index][0]),
+                ),
+              ),
+              trailing: Text("..."),
+              subtitle: Text("subtitle"),
               title: Text(Movies[index]),
+              onTap: () => debugPrint("Movie Name : ${Movies[index]}"),
             ),
           );
       }),
