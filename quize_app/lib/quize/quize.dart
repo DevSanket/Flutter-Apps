@@ -20,9 +20,9 @@ class _quizeState extends State<quize> {
       appBar: AppBar(
         title: Text("Quize Master"),
         centerTitle: true,
-        backgroundColor: Colors.indigo,
+        // backgroundColor: Colors.indigo,
       ),
-      backgroundColor: Colors.indigo.shade50,
+      // backgroundColor: Colors.indigo.shade50,
       body: Builder(
         builder: (BuildContext context) => Container(
           child: Column(
@@ -44,10 +44,12 @@ class _quizeState extends State<quize> {
                   ),
                   height: 120,
                   child: Center(
-                    child: Text(QuestionBank[i].questionText,style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.black
-                    ),),
+                    child: Text(QuestionBank[i].questionText,
+                    //   style: TextStyle(
+                    //   fontSize: 18,
+                    //   color: Colors.black
+                    // ),
+                       ),
                   ),
                 ),
               ),
