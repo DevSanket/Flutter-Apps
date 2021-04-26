@@ -1,4 +1,5 @@
 import 'package:cat_adoption/cat.dart';
+import 'package:cat_adoption/ui/Footer/details_footer.dart';
 import 'package:cat_adoption/ui/Header/details_header.dart';
 import 'package:cat_adoption/ui/details.body.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +42,8 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
               ),
               Padding(padding: const EdgeInsets.all(24.0),
               child: CatDetailsBody(cat: widget.cat,),
-              )
+              ),
+              new CatShowCase(cat: widget.cat,avatarTag: widget.avatarTag,)
             ],
           ),
         ),
